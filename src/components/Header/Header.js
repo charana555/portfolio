@@ -25,17 +25,31 @@ const Header = () => {
           <li className=" list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
             <Link href="#experience"> Experience </Link>
           </li>
+          <li className=" list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
+            <a href="Charana.pdf" download="Charana Resume.pdf">
+              Resume
+            </a>
+          </li>
         </div>
 
         <div className="flex gap-3">
           <div className=" rounded-full cursor-pointer transition-all p-2 hover:bg-[#212d45] transform ">
-            <AiFillGithub className="text-2xl" />
+            <a href="https://github.com/charana555" target="_blanck">
+              <AiFillGithub className="text-2xl" />
+            </a>
           </div>
           <div className=" rounded-full cursor-pointer transition-all p-2 hover:bg-[#212d45] transform ">
-            <AiFillLinkedin className="text-2xl" />
+            <a href="https://www.linkedin.com/in/charana-c/" target="_blanck">
+              <AiFillLinkedin className="text-2xl" />
+            </a>
           </div>
           <div className=" rounded-full cursor-pointer transition-all p-2 hover:bg-[#212d45] transform ">
-            <AiFillInstagram className="text-2xl" />
+            <a
+              href="https://www.instagram.com/charan_chandrashekar/"
+              target="_blanck"
+            >
+              <AiFillInstagram className="text-2xl" />
+            </a>
           </div>
         </div>
       </div>
