@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="shadow-2xl rounded-full">
-        <Image src={profile} width={250} height={250} />
+        <Image src={profile} alt="profile" width={250} height={250} />
       </div>
     </section>
   );
