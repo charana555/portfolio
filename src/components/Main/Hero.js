@@ -3,18 +3,21 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="hero" className="flex justify-around items-center py-20 ">
+    <section
+      id="hero"
+      className=" w-[80%] mx-auto flex flex-wrap-reverse justify-around items-center py-20 gap-4"
+    >
       <div>
         <p className="ml-2">I am ,</p>
         <div>
-          <h1 className="text-6xl text-[#effc04] ">Charana</h1>
-          <h2 className="text-5xl ">Chandrashekar</h2>
+          <h1 className="text-4xl md:text-6xl text-[#fee400] ">Charana</h1>
+          <h2 className="text-3xl  md:text-5xl ">Chandrashekar</h2>
         </div>
-        <p className=" tracking-widest ">
-          I am a{" "}
-          <span className="text-[#effc04]"> Full-Stack Developement </span>
+        <p className=" tracking-wide md:tracking-widest ">
+          I am a
+          <span className="text-[#fee400]"> Full-Stack Developement </span>
           Enthusiast and a
-          <span className="text-[#effc04]"> passionate Developer .</span>
+          <span className="text-[#fee400]"> passionate Developer .</span>
         </p>
       </div>
       <div className="shadow-2xl rounded-full">
