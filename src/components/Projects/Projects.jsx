@@ -13,9 +13,9 @@ const Projects = () => {
       </h2>
       <hr className=" mb-5" />
       <div className={styles.work_list}>
-        {projects.map((item) => {
+        {projects.map((item, i) => {
           return (
-            <div className={styles.work}>
+            <div key={i} className={styles.work}>
               <Image
                 className={styles.work_img}
                 src={item.image}
@@ -29,6 +29,7 @@ const Projects = () => {
                 <div className="w-full flex justify-evenly items-center bg-transparent">
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     className="text-black p-4 mt-8 bg-black rounded-[50%]"
                     href={item.sourceLink}
                   >
@@ -36,6 +37,7 @@ const Projects = () => {
                   </a>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     className="text-black p-4 mt-8 bg-black rounded-[50%]"
                     href={item.webLink}
                   >
