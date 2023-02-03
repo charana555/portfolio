@@ -1,14 +1,15 @@
 .work_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .work {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  margin: 1rem;
 }
 
 .work_img {

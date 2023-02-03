@@ -33,7 +33,7 @@ const Header = () => {
             <Link href="#experience"> Experience </Link>
           </li>
           <li className=" mx-2 list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <a href="Charana.pdf" download="Charana Resume.pdf">
+            <a href="Charan_Resume.pdf" download="Charana Resume.pdf">
               Resume
             </a>
           </li>

@@ -7,11 +7,11 @@ import styles from "../../styles/projects.module.css";
 
 const Projects = () => {
   return (
-    <section id="projects" className=" w-[80%] mx-auto py-16 ">
+    <section id="projects" className=" w-[80%] mx-auto pt-16 ">
       <h2 className="py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 ">
         Projects
       </h2>
-      <hr className=" mb-5" />
+      <hr className=" mb-16" />
       <div className={styles.work_list}>
         {projects.map((item, i) => {
           return (
@@ -20,8 +20,8 @@ const Projects = () => {
                 className={styles.work_img}
                 src={item.image}
                 alt="work"
-                height={"400"}
-                width={"370"}
+                height={"330"}
+                width={"300"}
               />
               <div className={styles.layer}>
                 <h3 className={styles.layer_head}>{item.title}</h3>
