@@ -1,6 +1,7 @@
-import music from "../images/music.jpg";
+// import music from "../images/music.jpg";
 import vote from "../images/vote.jpg";
 import work from "../images/work.jpg";
+import courier from "../images/courier.jpeg";
 
 export const projects = [
   {
@@ -17,11 +18,18 @@ export const projects = [
     sourceLink: "https://github.com/charana555/react---voting---system",
     webLink: "",
   },
+  // {
+  //   image: music,
+  //   title: "Music Player",
+  //   desc: "Music Player is online web based music listening platform.",
+  //   sourceLink: "",
+  //   webLink: "",
+  // },
   {
-    image: music,
-    title: "Music Player",
-    desc: "Music Player is online web based music listening platform.",
-    sourceLink: "",
+    image: courier,
+    title: "Zip-Zap Couriers",
+    desc: "Courier package management CRM tool",
+    sourceLink: "https://github.com/charana555/courier_management_system",
     webLink: "",
   },
 ];
