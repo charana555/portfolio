@@ -7,9 +7,9 @@ import styles from "../../styles/projects.module.css";
 
 const Projects = () => {
   return (
-    <section id="projects" className=" w-[80%] mx-auto pt-16 ">
-      <h2 className="py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 ">
-        Projects
+    <section id="projects" className=" w-[80%] mx-auto pt-8 ">
+      <h2 className="font-slab py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 ">
+        PROJECTS
       </h2>
       <hr className=" mb-16" />
       <div className={styles.work_list}>
