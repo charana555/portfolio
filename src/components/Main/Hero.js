@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className=" min-h-[80vh] w-[80%] mx-auto flex flex-wrap-reverse justify-around items-center   gap-4"
+      className=" min-h-[80vh] w-[80%] mx-auto flex flex-wrap-reverse justify-around items-center gap-4"
     >
       <div>
         <p className="ml-2 text-2xl font-slab">

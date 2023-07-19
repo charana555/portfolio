@@ -5,7 +5,7 @@ import { about } from "../../data/aboutData";
 
 const About = () => {
   return (
-    <section id="about" className=" w-[80%] mx-auto pt-16 ">
+    <section id="about" className=" w-[80%] mx-auto pt-16 overflow-hidden">
       <h2 className="font-slab py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 text-center md:text-right">
         ABOUT ME
       </h2>

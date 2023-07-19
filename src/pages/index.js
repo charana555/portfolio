@@ -13,7 +13,7 @@ import About from "../components/About/About";
 
 const index = () => {
   return (
-    <div className="scroll-smooth">
+    <>
       <Head>
         <title>Portfolio-Charana</title>
         <link rel="icon" href="/cuttlefish.svg" />
@@ -26,7 +26,7 @@ const index = () => {
       <Projects />
       <Skills />
       <Footer />
-    </div>
+    </>
   );
 };
 
