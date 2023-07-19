@@ -1,6 +1,8 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
+import { about } from "../../data/aboutData";
+
 const About = () => {
   return (
     <section id="about" className=" w-[80%] mx-auto pt-16 ">
@@ -24,15 +26,10 @@ const About = () => {
         </div>
         <div className="p-8">
           <p className=" mx-auto text-center pb-8 tracking-wide leading-8 text-lg">
-            I'm Charana C, a self-taught Full-stack developer who is passionate
-            about crafting innovative solutions.I am dedicated to providing
-            excellent Full-stack development services.
+            {about[0]}
           </p>
           <p className="mx-auto text-center pb-8 tracking-wide leading-8 text-lg">
-            Through my journey of learning and exploration, I've gained a solid
-            understanding of front-end and back-end technologies. I strive to
-            deliver high-quality, user-centric applications that exceed
-            expectations.
+            {about[1]}
           </p>
           <div className="flex justify-center py-4">
             <button className="bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-3xl ">
