@@ -11,8 +11,11 @@ const Experience = () => {
       <hr className=" mb-16" />
       <div className="flex flex-col gap-10">
         {/* experience cards  */}
-        {experience.map((item) => (
-          <div className="relative hover:shadow-inner hover:shadow-gray-700/30  p-8 md:w-[80%] mx-auto mb-6 border-l-2">
+        {experience.map((item, i) => (
+          <div
+            key={i}
+            className="relative hover:shadow-inner hover:shadow-gray-700/30  p-8 md:w-[80%] mx-auto mb-6 border-l-2"
+          >
             <div className="p-3 bg-yellow-300 rounded-full -top-2 -left-5 absolute">
               <MdOutlineComputer
                 style={{ fill: "black" }}
@@ -35,8 +38,8 @@ const Experience = () => {
 
             {/* role description  */}
             <ul className="text-md list-disc pl-5 mt-2 tracking-wide">
-              {item.description.map((desc) => (
-                <li>{desc}</li>
+              {item.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
               ))}
             </ul>
           </div>

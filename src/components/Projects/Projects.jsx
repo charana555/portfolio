@@ -12,7 +12,7 @@ const Projects = () => {
         PROJECTS
       </h2>
       <hr className=" mb-16" />
-      <div className={styles.work_list}>
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 place-items-center">
         {projects.map((item, i) => {
           return (
             <div key={i} className={styles.work}>

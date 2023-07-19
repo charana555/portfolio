@@ -6,24 +6,27 @@ import Hero from "../components/Main/Hero";
 import Projects from "../components/Projects/Projects";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
-import Skills from "../components/Skills/SkillSlide";
+// import Skills from "../components/Skills/SkillSlide";
 import Eduacation from "../components/Education/Eduacation";
+import Skills from "../components/Skills/SkillBox";
+import About from "../components/About/About";
 
 const index = () => {
   return (
-    <>
+    <div className="scroll-smooth">
       <Head>
         <title>Portfolio-Charana</title>
         <link rel="icon" href="/cuttlefish.svg" />
       </Head>
       <Header />
       <Hero />
+      <About />
       <Experience />
       <Eduacation />
       <Projects />
       <Skills />
       <Footer />
-    </>
+    </div>
   );
 };
 
