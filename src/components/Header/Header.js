@@ -11,8 +11,8 @@ const Header = () => {
     setToggle(!toggle);
   };
   return (
-    <nav className="w-full">
-      <div className="w-[80%] mx-auto flex justify-between items-center py-4 ">
+    <nav className="w-full fixed z-20">
+      <div className="w-[85%] mx-auto flex justify-between items-center py-6 ">
         <div>
           <Link href="#hero">
             <a className="flex gap-1 items-center">
@@ -22,24 +22,25 @@ const Header = () => {
           </Link>
         </div>
         {/* desktop view  */}
-        <div className="gap-16 hidden md:flex">
-          <li className=" mx-2 list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#skills"> Skills </Link>
+        <div className="gap-10 hidden md:flex">
+          <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link href="#about"> About </Link>
           </li>
-          <li className=" mx-2 list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#projects"> Projects </Link>
-          </li>
-          <li className=" mx-2 list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
+          <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
             <Link href="#experience"> Experience </Link>
           </li>
-          <li className=" mx-2 list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <a href="Charan_Resume.pdf" download="Charana Resume.pdf">
-              Resume
-            </a>
+          <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link href="#projects"> Projects </Link>
+          </li>
+          <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link href="#skills"> Skills </Link>
+          </li>
+          <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link href="#contact"> Contact </Link>
           </li>
         </div>
 
-        <div className="hidden md:flex gap-3">
+        {/* <div className="hidden md:flex gap-3">
           <div className=" rounded-full cursor-pointer transition-all p-2 hover:bg-[#212d45] transform ">
             <a href="https://github.com/charana555" target="_blanck">
               <AiFillGithub className="text-2xl" />
@@ -58,7 +59,7 @@ const Header = () => {
               <AiFillInstagram className="text-2xl" />
             </a>
           </div>
-        </div>
+        </div> */}
         <GiHamburgerMenu
           onClick={handleclick}
           className="text-2xl md:hidden cursor-pointer"
@@ -67,31 +68,33 @@ const Header = () => {
       {/* mobile view  */}
       {toggle && (
         <div className="flex flex-col items-start py-2 pl-4 gap-5 bg-[#0b101b85] transition-all duration-1000">
-          <li className="bg-transparent list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#skills">
-              Skills
+          <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link className="bg-transparent" href="#about">
+              About
             </Link>
           </li>
-          <li className="bg-transparent list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#projects">
-              Projects
-            </Link>
-          </li>
-          <li className="bg-transparent list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
+          <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
             <Link className="bg-transparent" href="#experience">
               Experience
             </Link>
           </li>
-          <li className="bg-transparent list-none text-md lett tracking-wide hover:text-gray-400 cursor-pointer ">
-            <a
-              className="bg-transparent"
-              href="Charana.pdf"
-              download="Charana Resume.pdf"
-            >
-              Resume
-            </a>
+          <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link className="bg-transparent" href="#projects">
+              Projects
+            </Link>
           </li>
-          <div className=" bg-transparent flex gap-3 rounded-full cursor-pointer transition-all  hover:bg-[#212d45] transform ">
+          <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link className="bg-transparent" href="#skills">
+              Skills
+            </Link>
+          </li>
+          <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
+            <Link className="bg-transparent" href="#contact">
+              Contact
+            </Link>
+          </li>
+
+          {/* <div className=" bg-transparent flex gap-3 rounded-full cursor-pointer transition-all  hover:bg-[#212d45] transform ">
             <a href="https://github.com/charana555" target="_blanck">
               <AiFillGithub className="text-2xl" />
             </a>
@@ -111,7 +114,7 @@ const Header = () => {
               <AiFillInstagram className="text-2xl" />
             </a>
             <p className="bg-transparent">Instagram</p>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>

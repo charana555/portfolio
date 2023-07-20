@@ -1,9 +1,13 @@
 import React from "react";
 import ContactIcons from "./ContactIcons";
+import { BsArrowRight } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <section id="contact" className=" w-[80%] mx-auto pt-16 overflow-hidden">
+    <section
+      id="contact"
+      className=" w-[95%] md:w-[80%] mx-auto pt-16 overflow-hidden"
+    >
       <h2 className="font-slab py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 text-center md:text-left">
         CONTACT ME
       </h2>
@@ -18,6 +22,17 @@ const Contact = () => {
             You contact me at :
           </p>
           <ContactIcons />
+          <div className="flex justify-center py-4">
+            <button className="bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-3xl ">
+              <a
+                className=" bg-transparent flex items-center justify-center gap-2"
+                href="Charana.pdf"
+                download="Charana Resume.pdf"
+              >
+                Download CV
+              </a>
+            </button>
+          </div>
         </div>
         <form className="p-3 md:p-10">
           {/* name  */}

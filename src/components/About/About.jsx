@@ -5,7 +5,10 @@ import { about } from "../../data/aboutData";
 
 const About = () => {
   return (
-    <section id="about" className=" w-[80%] mx-auto pt-16 overflow-hidden">
+    <section
+      id="about"
+      className=" w-[95%] md:w-[80%] mx-auto pt-16 overflow-hidden"
+    >
       <h2 className="font-slab py-4 font-[530] ml-2 text-5xl text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 text-center md:text-right">
         ABOUT ME
       </h2>
@@ -13,7 +16,7 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center">
         <div className="p-8">
-          <div className=" rounded  h-[450px] w-[450px] flex justify-center items-center p-4">
+          <div className=" rounded  h-[300px] w-[300px] md:h-[450px] md:w-[450px] flex justify-center items-center p-4">
             <img
               className="bg-transparent"
               style={{
