@@ -1,7 +1,7 @@
 import { FaCuttlefish } from "react-icons/fa";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useState } from "react";
 
 const Header = () => {
@@ -13,30 +13,40 @@ const Header = () => {
   return (
     <nav className="w-full fixed z-20">
       <div className="w-[85%] mx-auto flex justify-between items-center py-6 ">
-        <div>
-          <Link href="#hero">
-            <a className="flex gap-1 items-center">
+        <div className=" cursor-pointer">
+          <Link smooth={true} duration={500} to="hero">
+            <div className="flex gap-1 items-center">
               <FaCuttlefish className="text-white text-3xl " />
               <span className=" text-xl font-bold ">Portfolio</span>
-            </a>
+            </div>
           </Link>
         </div>
         {/* desktop view  */}
         <div className="gap-10 hidden md:flex">
           <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#about"> About </Link>
+            <Link smooth={true} duration={500} to="about">
+              About
+            </Link>
           </li>
           <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#experience"> Experience </Link>
+            <Link smooth={true} duration={500} to="experience">
+              Experience
+            </Link>
           </li>
           <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#projects"> Projects </Link>
+            <Link smooth={true} duration={500} offset={-100} to="projects">
+              Projects
+            </Link>
           </li>
           <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#skills"> Skills </Link>
+            <Link smooth={true} duration={500} to="skills">
+              Skills
+            </Link>
           </li>
           <li className=" mx-2 list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link href="#contact"> Contact </Link>
+            <Link smooth={true} duration={500} to="contact">
+              Contact
+            </Link>
           </li>
         </div>
 
@@ -69,27 +79,52 @@ const Header = () => {
       {toggle && (
         <div className="flex flex-col items-start py-2 pl-4 gap-5 bg-[#0b101b85] transition-all duration-1000">
           <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#about">
+            <Link
+              className="bg-transparent"
+              smooth={true}
+              duration={500}
+              to="about"
+            >
               About
             </Link>
           </li>
           <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#experience">
+            <Link
+              className="bg-transparent"
+              smooth={true}
+              duration={500}
+              to="experience"
+            >
               Experience
             </Link>
           </li>
           <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#projects">
+            <Link
+              className="bg-transparent"
+              smooth={true}
+              duration={500}
+              to="projects"
+            >
               Projects
             </Link>
           </li>
           <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#skills">
+            <Link
+              className="bg-transparent"
+              smooth={true}
+              duration={500}
+              to="skills"
+            >
               Skills
             </Link>
           </li>
           <li className="bg-transparent list-none text-md  tracking-wide hover:text-gray-400 cursor-pointer ">
-            <Link className="bg-transparent" href="#contact">
+            <Link
+              className="bg-transparent"
+              smooth={true}
+              duration={500}
+              to="contact"
+            >
               Contact
             </Link>
           </li>
